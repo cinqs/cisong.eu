@@ -1,5 +1,19 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+	.container
+		.content
+			h1
+				a(href='http://cisong.eu/profile') 
+					i.fa.fa-male
+					&nbsp;&nbsp;Ci SONG
+
+	.container
+		.content
+			h1
+				a(href='http://blog.imcisong.com')
+					i.fa.fa-wordpress
+					&nbsp;&nbsp;BLOG
+
+
+	include ./footer.jade
