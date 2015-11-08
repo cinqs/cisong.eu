@@ -13,7 +13,7 @@ body {
 .container{
 	display: table-cell;
 	vertical-align: middle;
-  width: 50%;
+  width: calc(100%/3);
 }
 
 .container:first-child{
@@ -38,6 +38,16 @@ body {
 
 .container:nth-child(2) a{
   color: white;
+}
+
+.container:nth-child(3){
+  background-color: black;
+}
+.container:nth-child(3) .content{
+  background-color: white;
+}
+.container:nth-child(3) a{
+  color: black;
 }
 
 .content{

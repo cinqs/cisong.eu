@@ -12,6 +12,10 @@ router.get('/', function(req, res, next) {
 
 router.get('/profile', function(req, res, next){
 	res.sendFile(path.join(__dirname, '../public/profile.html'));
-})
+});
+
+router.get('/profile/html', function(req, res, next){
+	res.sendFile(path.join(__dirname, '../public/cv/CV-english.htm'));
+});
 
 module.exports = router;
